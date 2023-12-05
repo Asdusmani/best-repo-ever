@@ -39,7 +39,7 @@ node {
 			    echo "SF_CONSUMER_KEY: $SF_CONSUMER_KEY"
 			    echo "SF_USERNAME: $SF_USERNAME"
 			    echo "server_key_file: $server_key_file"
-			rc = command '$toolbelt/sfdx auth:jwt:grant --instanceurl $SF_INSTANCE_URL --clientid $SF_CONSUMER_KEY --username $SF_USERNAME --jwtkeyfile $server_key_file --setdefaultdevhubusername --setalias DevOps'
+			rc = command "$toolbelt/sfdx auth:jwt:grant --instanceurl $SF_INSTANCE_URL --clientid $SF_CONSUMER_KEY --username $SF_USERNAME --jwtkeyfile $server_key_file --setdefaultdevhubusername --setalias DevOps"
 		    if (rc != 0) {
 			error 'Salesforce org authorization failed.'
 		    }
