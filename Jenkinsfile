@@ -7,7 +7,7 @@ node {
     def SERVER_KEY_CREDENTIALS_ID=CONNECTED_APP_CONSUMER_KEY_DH
     def DEPLOYDIR='force-app'
     def TEST_LEVEL='RunLocalTests'
-    def SF_INSTANCE_URL = env.SFDC_HOST_DH ?: "https://login.salesforce.com/"
+    def SF_INSTANCE_URL = env.SFDC_HOST_DH
 
 
     def toolbelt = tool 'toolbelt'
